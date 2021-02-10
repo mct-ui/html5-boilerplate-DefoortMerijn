@@ -10,6 +10,7 @@ html {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #111;
   padding: 24px 24px 0;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -44,31 +45,31 @@ img {
 */
 
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 40px;
-    margin: 0 0 48px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48px;
 }
 
 h2 {
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 h3 {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 h4,
 h5,
 h6 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 p,
@@ -78,59 +79,75 @@ dl,
 table,
 address,
 figure {
-    margin: 0 0 24px;
+  margin: 0 0 24px;
 }
 
 ul,
 ol {
-    padding-left: 24px;
+  padding-left: 24px;
 }
 
 li ul,
-li ol{
-    margin-bottom: 0;
+li ol {
+  margin-bottom: 0;
 }
 blockquote {
-    font-style: italic;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-    font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: "Times New Roman", serif;
 }
 blockquote * {
-    font-size: inherit;
-    line-height: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 figcaption {
-    font-size: 12px;
-    line-height: 16px;
-    padding-top: 8px;
-    color: grey;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: grey;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: lightgray;
-    margin: 0 0 24px;
+  border: 0;
+  height: 1px;
+  background: lightgray;
+  margin: 0 0 24px;
 }
 
 a {
-    color: royalblue;
-    transition: all .1s ease-in-out;
+  color: royalblue;
+  transition: all 0.1s ease-in-out;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
 }
 
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 4px 8px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.odd {
+  background-color: whitesmoke;
+}
 a:visited,
 a:active {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 a:hover,
 a:focus {
-    color: crimson;
+  color: crimson;
 }
-
 
 /*
     Media Queries
@@ -140,34 +157,30 @@ a:focus {
     Modify as content requires.
 */
 
-
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
 */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    h1{
-        font-size: 58px;
-        line-height: 64px;
-    }
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
 
-    html{
-        padding: 48px 48px 24px;
-    }
+  html {
+    padding: 48px 48px 24px;
+  }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
